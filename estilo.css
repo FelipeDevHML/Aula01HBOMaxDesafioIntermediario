@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Inter', sans-serif;
+	color: #FFFFFF;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.6rem;
+	background-color: #0F0F0F;
+}
+
+	body h3,h2 {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2.9rem;
+		line-height: 3.5rem;
+	}
+
+	body h1 {
+		font-weight: 700;
+	}
+
+header, main, footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 45rem;
+	margin-top: 4rem;
+}
+
+	main div form {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+	}
+
+	form input {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+main form input[type="submit"] {
+	width: 12rem;
+	height: 2.5rem;
+
+	background: #8C77E0;
+	border: 1px solid #000000;
+	box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+	border-radius: 2.5rem;
+}
+
+footer button {
+	width: 19rem;
+	height: 2.5rem;
+
+	background: #8C77E0;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+}
