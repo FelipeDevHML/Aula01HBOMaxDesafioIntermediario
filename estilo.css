@@ -135,3 +135,7 @@ footer a {
 	line-height: 4rem;
 	text-decoration: none;
 }
+
+@media all and (max-width:479px){
+	html {font-size: 20%;}
+}
