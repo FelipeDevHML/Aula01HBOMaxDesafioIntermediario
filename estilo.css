@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 html {
 	font-size: 62.5%;
 }
 
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0rem;
+	padding: 0rem;
 	font-family: 'Inter', sans-serif;
 	color: #FFFFFF;
+	font-style: normal;
+}
+article {
+	width: min-content;
 }
 
 body {
@@ -18,59 +22,116 @@ body {
 	background-color: #0F0F0F;
 }
 
-	body h3,h2 {
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 400;
+	body h3,h2,p {
+		font-weight: 300;
 		font-size: 2.9rem;
 		line-height: 3.5rem;
 	}
 
 	body h1 {
-		font-weight: 700;
+		padding: 0rem 0rem 2.5rem 0rem;
+		font-weight: 600;
+		font-size: 5.4rem;
+		line-height: 6.5rem;
 	}
 
 header, main, footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 2.5rem 0rem 2.5rem 0;
 }
 
-main div {
+header {
+	padding: 2.5rem 0rem 2.5rem 0rem;
+}
+
+	header div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2.5rem 0rem 2.5rem 0rem;
+		row-gap: 1rem;
+	}
+
+main form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 45rem;
-	margin-top: 4rem;
 }
 
-	main div form {
-		display: flex;
-		flex-direction: column;
-		align-items: left;
-	}
+/* Mantem o Label a esquerda conforme solicitado */
+main form div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: 45rem;
+	padding-top: 4rem;
+}
 
-	form input {
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+main form div label {
+	font-weight: 300;
+	font-size: 3.3rem;
+	line-height: 4rem;
+	padding-left: 1rem;
+}
+
+form input {
+	font-size: 1.8rem;
+	background: #7F7F7F;
+	border-radius: 2.5rem;
+	/* width: 56.6rem; */
+	height: 5rem;
+	width: auto;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+}
+	main input::placeholder{
+		color: white;
 	}
 
 main form input[type="submit"] {
-	width: 12rem;
-	height: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	width: 21.4rem;
+	height: 5rem;
+	font-weight: 300;
+	font-size: 3.3rem;
+	line-height: 4rem;
 
 	background: #8C77E0;
-	border: 1px solid #000000;
+	border: 0.1rem solid #000000;
 	box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
 	border-radius: 2.5rem;
 }
+main form input[type="submit"]:hover {
+	cursor: pointer;
+}
 
 footer button {
-	width: 19rem;
-	height: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	width: 40.45rem;
+	height: 5rem;
+	margin-top: 2.5rem;
 
 	background: #8C77E0;
-	border: 1px solid #000000;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 25px;
+	border: 0.1rem solid #000000;
+	box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+	border-radius: 2.5rem;
+}
+footer h2 {
+	text-align: center;
+}
+
+footer a {
+	font-weight: 300;
+	font-size: 3.3rem;
+	line-height: 4rem;
+	text-decoration: none;
 }
